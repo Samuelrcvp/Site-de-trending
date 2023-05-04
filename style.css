@@ -11,6 +11,9 @@ li {
   button{
     text-decoration: none;
   }
+  a{
+    text-decoration: none;
+  }
 :root{
     --corPrimaria:rgb(63, 240, 116);
 }
@@ -33,14 +36,14 @@ header ul{
     align-items: center;
     gap: 2rem;
 }
-header a{
+header .menu{
     transition: all .42 ease;
     padding-bottom: 0.3rem;
     font-size: 22px;
     color:#fff;
     text-decoration: none;
 }
-header a:hover{
+header .menu:hover{
     border-bottom: solid var(--corPrimaria);
 }
 header a:focus{
