@@ -1,0 +1,134 @@
+/* Estilos Gerais */
+*{  font-family:cursive;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+li {
+    list-style-type: none;
+  }
+  button{
+    text-decoration: none;
+  }
+:root{
+    --corPrimaria:rgb(63, 240, 116);
+}
+
+/* Cabeçalho */
+
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header a{
+    transition: all .42 ease;
+    padding-bottom: 0.3rem;
+    font-size: 22px;
+    color:#fff;
+    text-decoration: none;
+}
+header a:hover{
+    border-bottom: solid var(--corPrimaria);
+}
+header a:focus{
+    color:var(--corPrimaria);
+}
+#logo{
+    font-size: 30px;
+    color: var(--corPrimaria);
+}
+.rolagem{
+    background-color: #fff;   
+    transition: all 0.7s;
+}
+.rolagem #logo{
+    color: var(--corPrimaria);
+    transition: all 1s;
+}
+.rolagem a{
+    color: #000;
+}
+
+/* Centro do site */
+
+#principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: larger;
+    color: #fff;
+}
+.caixaMeio{
+    max-width: 50rem;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    border-radius: 20px;
+    background-color: rgb(14, 14, 26);;
+}
+#principal h2{
+    margin-bottom: 1rem;
+}
+#principal span{
+    color:var(--corPrimaria);
+}
+.btn {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 70px #b8b8b8;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  .btn:active {
+    scale: 0.92;
+  }
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgb(4, 128, 0) 0%, var(--corPrimaria) 60%);
+    color: rgb(4, 4, 38);
+    transition: 1s;
+  }
+
+/* Sobre */
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    text-align: center;
+}
+article{
+    
+    align-items: center;
+    max-width:50rem;
+}
